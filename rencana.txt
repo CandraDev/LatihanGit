@@ -1,0 +1,1 @@
+Saya ingin membuat proyek stok gudang dengan PHP. Insya Allah
