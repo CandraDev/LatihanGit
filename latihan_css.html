@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan CSS</title>
+    <style>
+        p {
+            color: green;
+            font-size: 18px;
+        }
+
+        #highlight {
+            color: orange;
+            font-size: 20px;
+        }
+
+        #boxModel {
+            width: 300px;
+            height: 150px;
+            padding: 20px;
+            border: 5px solid black;
+            margin: 15px;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .item {
+            padding: 10px;
+            border: 2px solid gray;
+        }
+
+        h2 {
+            font-family: Arial, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .advanced-style {
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(to right, blue, purple);
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            .flex-container {
+                flex-direction: column;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            body {
+                background-color: #e0f7fa;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 style="color: blue; font-size: 36px;">Latihan CSS</h1>
+    <p>Ini adalah contoh penggunaan CSS.</p>
+
+    <div class="container">
+        <p>Paragraf pertama dalam div container.</p>
+        <p>Paragraf kedua dalam div container.</p>
+        <p>Paragraf ketiga dalam div container.</p>
+    </div>
+    <p id="highlight">Paragraf dengan ID highlight.</p>
+    <a href="#">Klik di sini</a>
+
+    <div id="boxModel">Ini adalah contoh Box Model</div>
+
+    <div class="flex-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+
+    <h2>Styling Lanjutan</h2>
+    <p style="background-image: url('background.jpg'); background-size: cover; background-repeat: no-repeat;">
+        Ini adalah contoh penggunaan font dan background.
+    </p>
+    <div class="advanced-style">Ini adalah kotak dengan gaya yang menarik.</div>
+</body>
+</html>
